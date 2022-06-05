@@ -1,0 +1,634 @@
+@font-face {
+    font-family: 'Brand';
+    src: url(/font/brand.woff);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/font/montserrat.woff);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/* .header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    background-size: cover;
+    overflow: hidden;
+} */
+.header {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: #1F4156;
+    z-index: 3;
+    clip-path: inset(-50% -50% -50% 0%);
+}
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    z-index: 7;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+}
+.linki1 {
+    margin-right: 350px;
+}
+
+.navkir .nav-link {
+    color: #1F4156;
+}
+.navkan .nav-link {
+    color: #fff;
+}
+
+
+.nav-link {
+    font-family: 'Brand';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 60px;
+}
+.elyd {
+    position: fixed;
+    width: 92%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+    filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+}
+.txtteal {
+    width: 100%;
+    position: fixed;
+    font-family: 'Brand';
+    font-size: 186px;
+    color: #1F4156;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.txtwhite {
+    width: 100%;
+    position: fixed;
+    font-family: 'Brand';
+    font-size: 186px;
+    color: #fff;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.txtbrandw {
+    width: 100%;
+    position: fixed;
+    font-family: 'Brand';
+    font-size: 24px;
+    color: #fff;
+    z-index: 7;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.txtbrandt {
+    width: 100%;
+    position: fixed;
+    font-family: 'Brand';
+    font-size: 24px;
+    color: #1F4156;
+    z-index: 1;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.kata .tagline {
+    position: absolute;
+    z-index: 2;
+    bottom: 120px;
+}
+.tags {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+.tombolhome {
+    position: relative;
+    left: 0;
+}
+.btn-primary {
+    background-color: #1F4156;
+    width: 178px;
+    border-radius: 25px;
+    border: none;
+}
+.tagline button {
+    margin-left: -150px;
+}
+
+
+@media (max-width: 1200px)  {
+    .txtteal {
+        font-size: 155px;
+    }
+    .txtwhite {
+        font-size: 155px;
+    }
+    .kata .tagline {
+        position: absolute;
+        z-index: 2;
+        bottom: 101px;
+    }
+    .tagline button {
+        margin-left: -84px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .navbar {
+        position: fixed;
+        background-color: transparent;
+        z-index: 7;
+        left: 48%;
+        top: 9%;
+        transform: translate(-50%, -50%);
+        /* max-width: 1025px; */
+    }
+    .linki1 {
+        margin-right: 140px;
+    }
+    .txtteal {
+        font-size: 135px;
+    }
+    .txtwhite {
+        font-size: 135px;
+    }
+    .elyd {
+        position: fixed;
+        width: 108%;
+        left: 50%;
+        top: 59%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+        filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+    }
+    .tags {
+        font-family: 'Montserrat';
+        font-size: 22px;
+        line-height: 23px;
+        text-align: left;
+    }
+    .kata .tagline {
+        position: absolute;
+        z-index: 2;
+        bottom: 147px;
+        left: 86px;
+    }
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 29%;
+    }
+}
+    
+
+@media (max-width: 768px) {
+    .navbar {
+        left: 47%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .txtteal {
+        font-size: 99px;
+    }
+    .txtwhite {
+        font-size: 99px;
+    }
+    .elyd {
+        position: fixed;
+        width: 115%;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+        filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+    }
+    .tags {
+        font-size: 20px;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: -2rem;
+    }
+    .kata .tagline {
+        position: absolute;
+        z-index: 2;
+        bottom: 182px;
+        left: 87px;
+    }
+    .tombolhome {
+        position: relative;
+        left: 0;
+        bottom: -10px;
+    }
+    .btn-primary {
+        background-color: #1F4156;
+        width: 118px;
+        border-radius: 25px;
+        border: none;
+    } 
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        left: 47%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-link {
+        font-family: 'Brand';
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-left: 35px;
+    }
+    .txtwhite {
+        font-size: 70px;
+        bottom: -134px;
+    }
+    .txtteal {
+        font-size: 70px;
+        bottom: -134px;
+    }
+    .elyd {
+        position: fixed;
+        width: 153%;
+        left: 50%;
+        top: 68%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+        filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+    }
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 39%;
+    }
+    .kata .tagline {
+        position: absolute;
+        z-index: 2;
+        bottom: 339px;
+        left: 75px;
+    }
+    .tags {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        line-height: 23px;
+        text-align: left;
+    }
+    .tombolhome {
+        position: relative;
+        left: 8px;
+    }
+    .btn-primary {
+        background-color: #1F4156;
+        width: 135px;
+        border-radius: 25px;
+        border: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .elyd {
+        position: fixed;
+        width: 255%;
+        left: 50%;
+        top: 68%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+        filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+    }
+    .txtbrandw {
+        width: 100%;
+        position: fixed;
+        font-family: 'Brand';
+        font-size: 17px;
+        color: #fff;
+        z-index: 7;
+        top: 4%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .txtbrandt {
+        width: 100%;
+        position: fixed;
+        font-family: 'Brand';
+        font-size: 17px;
+        color: #1F4156;
+        z-index: 1;
+        top: 4%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .navbar {
+        left: 49%;
+        top: 62px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .nav-link {
+        font-family: 'Brand';
+        text-transform: uppercase;
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .linki1 {
+        margin-right: 23px;
+    }
+    .txtwhite {
+        font-size: 49px;
+        bottom: -134px;
+    }
+    .txtteal {
+        font-size: 49px;
+        bottom: -134px;
+    }
+    .kata .tagline {
+        position: absolute;
+        z-index: 2;
+        bottom: 385px;
+        left: 33px;
+    }
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 49%;
+    }
+    .tags {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 23px;
+        text-align: left;
+    }
+    .btn-primary {
+        background-color: #1F4156;
+        width: 115px;
+        border-radius: 25px;
+        border: none;
+    }
+    .tagline button {
+        margin-left: -58px;
+    }
+}
+
+
+/* layan porto kontak */
+
+
+    /* BERANDA HTML */
+    /* .navbar-nav img{
+        width: 150px;
+        margin-top: -5px;
+        position: relative;
+        z-index: 3;
+    }
+    .linki {
+        position: absolute;
+        width: 150px;
+        margin-top: 30px;
+        margin-left: 150px;
+        z-index: 3;
+    }
+    .linki .nav-link {
+        margin-right: 90px;
+        font-family: 'Brand';
+        color: #1F4156;
+        text-transform: uppercase;
+    }
+    .linki2 {
+        position: absolute;
+        width: 150px;
+        margin-top: 30px;
+        margin-left: 710px;
+        z-index: 3;
+    }
+    .linki2 .nav-link {
+        margin-right: 90px;
+        font-family: 'Brand';
+        color: #fff;
+        text-transform: uppercase;
+    } */
+    
+    .jumbotron-bg {
+        background-image: url('/img/background.png');
+        background-size: cover;
+        height: 100vh;
+        margin-top: -62px;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+    .jumbotron-bg .elydcover {
+        position: relative;
+        margin: auto;
+        bottom: -1px;
+        max-width: 1120px;
+        -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+        filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.18));
+        z-index: 2;
+    }
+    .jumbotron-bg .elydtext {
+        position: relative;
+        margin: auto;
+        bottom: 710px;
+        max-width: 1600px;
+        z-index: 1;
+    }
+    
+    
+    /* AKHIR BERANDA HTML */
+
+    
+    /* LAYANAN HTML */
+    .box1 {
+        position: absolute;
+        background-color: #1F4156;
+        width: 683px;
+        height: 226px;
+        border-radius: 0 0 45px 45px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .box2 {
+        position: absolute;
+        background-color: #1F4156;
+        width: 683px;
+        height: 226px;
+        border-radius: 45px 45px 0 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .layanan .container {
+        position: relative;
+        top: 50px;
+    }
+    .glass {
+        position: absolute;        
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 45px;
+        width: 381px;
+        height: 381px;
+        z-index: 2;
+        align-content: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.18);
+    }
+    .glass:before {
+        content: '';
+        position: absolute;
+        border-radius: 45px;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: rgb#000; 
+        backdrop-filter: blur(8px); 
+        z-index: 2;
+    }
+    .glass2 {
+        position: absolute;        
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 45px;
+        width: 381px;
+        height: 381px;
+        right: 0;
+        z-index: 2;
+        align-content: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.18);
+    }
+    .glass2:before {
+        content: '';
+        position: absolute;
+        border-radius: 45px;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: rgb#000; 
+        backdrop-filter: blur(8px); 
+        z-index: 2;
+    }
+
+    .layanan .container h1 {
+        position: relative;
+        font-family: 'Montserrat';
+        color: #1F4156;
+        margin-top: 30px;
+        z-index: 4;
+        justify-content: center;
+        text-align: center;
+    }
+    .layanan .container img {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        z-index: 4;
+        display: block;
+        transform: translateX(50%);
+        width: 100px;
+    }
+    .layanan .container button {
+        position: absolute;
+        bottom: 20%;
+        left: 29%;
+        z-index: 4;
+    }
+    /* AKHIR LAYANAN HTML */
+
+    /* PORTOFOLIO HTML */
+    .judul {
+        text-align: center;
+        margin-top: 80px;
+        font-family: 'Brand';
+        color: #F79B6A;
+        text-shadow: 5px 5px 6px rgba(255,255,255,0.18);
+    }
+    .col {
+        position: relative;        
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 45px;
+        box-sizing: border-box;
+        height: 400px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        z-index: 1;
+        align-content: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.18);
+    }
+    .col:before {
+        content: '';
+        position: absolute;
+        border-radius: 45px;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: rgb#000; 
+        backdrop-filter: blur(8px); 
+        z-index: 2;
+    }
+    .port p {
+        position: relative;
+        z-index: 7;
+    }
+    .port img {
+        position: relative;
+        width:189px;
+        border-radius: 84px;
+        z-index: 7;
+    }
+    
+
+
+
+    /* AKHIR PORTOFOLIO HTML */
+
+
+
